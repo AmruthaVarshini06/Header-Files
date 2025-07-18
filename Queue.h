@@ -39,8 +39,7 @@ void peek (){
     cout << " queue is empty" << endl;
   }
  	else{
- 	cout << "peek element is :"
- 	cout << queue[rear];
+ 	cout << "peek element is :" << queue[rear] << endl;
  }
  }
 
