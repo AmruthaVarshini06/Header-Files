@@ -7,18 +7,14 @@ struct stack{
 	int st[MAX];
 	int top = -1;
 	
-	bool is_full(){
-		return top == MAX - 1;  //Checks whether the stack is full or not
-	}
-	
 	void push(int n){
-	    if(is_full){
+	    if(top == MAX - 1){
 	        cout << "Stack is overflowed.";  // If the stack is filled then it returns
 	    }
 	    st[++top] = n;  //Else it first increament the top and then assign the value to the stack
 	}
 	
-	void insert(int val){
+	void insert(int n){
 		push(n);  //Helps to insert the value
 	}
 	
